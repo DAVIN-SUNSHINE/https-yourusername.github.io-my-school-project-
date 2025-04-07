@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เก็บขยะแลกแต้ม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+
+
+      <h1>เก็บขยะแลกคะเเนนคืน</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <h2>ส่งรูปขยะและเลือกชั้นเรียน</h2>
+      <form id="upload-form">
+        <!-- ชื่อ -->
+        <div class="form-group">
+          <label for="name">ชื่อ:</label>
+          <input type="text" id="name" placeholder="ใส่ชื่อของคุณ" required>
+        </div>
+
+        <!-- ชั้น -->
+        <div class="form-group">
+          <label for="grade">ชื่อชั้น:</label>
+          <select id="grade" required>
+            <option value="">เลือกชั้นเรียน</option>
+            <option value="ม.1">ม.1</option>
+            <option value="ม.2">ม.2</option>
+            <option value="ม.3">ม.3</option>
+            <option value="ม.4">ม.4</option>
+            <option value="ม.5">ม.5</option>
+            <option value="ม.6">ม.6</option>
+          </select>
+        </div>
+
+        <!-- เลือกรูปขยะ -->
+        <div class="form-group">
+          <label for="file-input">เลือกรูปขยะ:</label>
+          <input type="file" id="file-input" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="submit-btn">ส่งรูปและแลกคะแนน</button>
+      </form>
+      <p id="status"></p>
+    </section>
+
+    <section id="score-section">
+      <h2>คะแนนของคุณ: <span id="score">0</span></h2>
+    </section>
+  </main>
+
+  <footer>
+    <p>ออกเเบบโดย นายธีรภัทร จำปาเทศ(บีม) &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
